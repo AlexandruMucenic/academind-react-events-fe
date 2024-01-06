@@ -8,7 +8,10 @@ export default function EventItem({ event }) {
   });
   return (
     <article className="event-item">
-      <img src={`http://localhost:3000/${event.image}`} alt={event.title} />
+      <img
+        src={`https://react-events-1acy.onrender.com/${event.image}`}
+        alt={event.title}
+      />
       <div className="event-item-content">
         <div>
           <h2>{event.title}</h2>

@@ -3,14 +3,14 @@ export default function ImagePicker({ images, selectedImage, onSelect }) {
     <div id="image-picker">
       <p>Select an image</p>
       <ul>
-        {images.map((image) => (
+        {images.map(image => (
           <li
             key={image.path}
             onClick={() => onSelect(image.path)}
             className={selectedImage === image.path ? 'selected' : undefined}
           >
             <img
-              src={`http://localhost:3000/${image.path}`}
+              src={`https://react-events-1acy.onrender.com/${image.path}`}
               alt={image.caption}
             />
           </li>
